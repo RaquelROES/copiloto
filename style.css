@@ -429,9 +429,9 @@ body:not(.edit) .slider-indicators {
 }
 
 .copiloto-navbar .copyright {
-    color: #fff;
-    line-height: 5.0rem;
+    display: none;
 }
+
 /**/
 
 /* Navigators */
