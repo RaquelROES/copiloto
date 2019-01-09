@@ -1,4 +1,4 @@
-# cengage_demo
+# copiloto
 /*General */
 body {
     height: 100vh;
@@ -70,16 +70,24 @@ body {
     background-color: transparent;
 }
 
+#actividad a:not(.zoom_flag_img) {
+    background-color: #fff;
+}
+
+
 /*INDICE LATERAL*/
 body:not(.isTablet) #book-index #indice .units ul li:not(.disabled) a:hover, #book-index #indice .units ul li.active a {
-    background: #b40b11;
+    background: #8FD7DA;
 }
 
 
 #book-index .col-main {
-        background: #b40b11;
+        background: #62ACB6;
 }
 
+#book-index .col-indice {
+    background: #efefeff5;
+}
 
 
 .libro-left #btn-book-index,
@@ -97,8 +105,8 @@ body:not(.isTablet) #book-index #indice .units ul li:not(.disabled) a:hover, #bo
 }
 
 #indice .unit-content .header .title {
-    color: #ed1b24;
-    background: #ffffff9e;
+    color: #8FD7DA;
+    background: #fff;
     float: left;
     font-size: 30px;
     font-weight: 700;
@@ -120,6 +128,7 @@ body:not(.isTablet) #book-index #indice .units ul li:not(.disabled) a:hover, #bo
 
 #book-index #indice .unit-content .actividades .item .title {
     font-weight: 400;
+    color: #000;
 }
 
 #indice .unit-content .actividades .item .nota {
@@ -134,13 +143,13 @@ body:not(.isTablet) #book-index #indice .units ul li:not(.disabled) a:hover, #bo
 
 #indice .units ul li.active:not(.disabled),
 #indice .units ul li:focus:not(.disabled) {
-    background: #bd0911;
+    background: #62ACB6;
 }
 
 #indice .units ul li.hover:not(.disabled),
 body:not(.isTablet) #indice .units ul li:hover:not(.disabled),
 #indice .units ul li:hover:not(.disabled) {
-    background: #8c0c12;
+    background: #ccc;
 }
 
 #book-index #indice .unit-content a,
@@ -162,22 +171,27 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled),
 #book-index #indice .unit-content a:focus,
 #indice .units ul li a:focus,
 #indice .actividades a:focus {
-    color: #bd0911;
+    color: #62ACB6;
 }
 
 #book-index #indice .unit-content .actividades .item {
-    background: #ebcece;
+    background: #8FD7DA;
     margin: 0px -20px 2px -20px;
     padding-left: 25px;
     opacity: 1;
 }
 
-body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover,
 #book-index #indice .unit-content .actividades .item.active,
 #book-index #indice .unit-content .actividades .item.current {
     color: #fff;
-    background: #e83535;
+    background: #efefeff5;
 }
+
+body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover {
+   background: #efefeff5;
+   color: #fff;
+}
+
 
 body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover a,
 #book-index #indice .unit-content .actividades .item.active a,
@@ -224,7 +238,7 @@ input, button, select, textarea {
     padding-bottom: 0px;
 }
 
-.cengage_demo-navbar h3 {
+.copiloto-navbar h3 {
     width: 75%;
     margin: auto;
     margin-bottom: 15px;
@@ -277,15 +291,13 @@ body.is_app #actividad .class_slide {
 }
 
 #actividad .content .header .title h3 {
-    color: #E76048;
-    font-size: 2.4rem;
+    color: #62ACB6;
+    font-size: 1.6rem;
     font-weight: 400;
 }
 
 #actividad .content .header .title h3:before {
-    content: '\f101';
-    margin-right: 10px;
-    font-family: 'FontAwesome';
+     display: none;
 }
 
 .slide_main input {
@@ -367,7 +379,7 @@ fieldset[disabled] .slide_main input {
     background: linear-gradient(to left, #7aac39, transparent);
 }
 
-.cengage_demo-navbar {
+.copiloto-navbar {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -378,7 +390,7 @@ fieldset[disabled] .slide_main input {
     background: #545759;;
 }
 
-body.is_app .cengage_demo-navbar {
+body.is_app .copiloto-navbar {
     /*top: 0;*/
     -webkit-transition: top 0.5s linear;
     -o-transition: top 0.5s linear;
@@ -386,11 +398,11 @@ body.is_app .cengage_demo-navbar {
     transition: top 0.5s linear;
 }
 
-body.is_app .cengage_demo-navbar.ocultar {
+body.is_app .copiloto-navbar.ocultar {
     top: -136px;
 }
 
-.cengage_demo-navbar .navbar-content {
+.copiloto-navbar .navbar-content {
     width: 100%;
     height: 100%;
     padding: 0 20px;
@@ -404,10 +416,10 @@ body.is_app .cengage_demo-navbar.ocultar {
 .logo-publisher {
     float: left;
     display: block;
-    width: 87px;
-    height: 35px;
-    margin: 9px 0;
-    background: url(../cengage_demo/images/logong.png) center center / cover no-repeat;
+    width: 125px;
+    height: 15px;
+    margin: 17px 0px;
+    background: url(../copiloto/images/logongc.png) center center / cover no-repeat;
 }
 
 .edit -publisher {
@@ -420,7 +432,7 @@ body:not(.edit) .slider-indicators {
     display: none;
 }
 
-.cengage_demo-navbar .copyright {
+.copiloto-navbar .copyright {
     color: #fff;
     line-height: 5.0rem;
 }
@@ -769,7 +781,7 @@ body:not(.edit) .slider-indicators {
     position: absolute;
     text-align: right;
     color: #ffffff;
-    background: #bf0811;
+    background: #8FD7DA;
     margin-left: -42px;
     margin-right: 5px;
     border-radius: 100%;
@@ -804,7 +816,7 @@ body:not(.edit) .slider-indicators {
 #actividad .popover-content ol.bck-ol-2 li:before,
 #actividad .content .workspace ul li ol.bck-ol-2 li:before {
     content: counter(bck-li-counter);
-    color: #333;
+    color: #8FD7DA;
     font-weight: bold;
     margin-top: 0;
     padding-right: 10px;
@@ -974,10 +986,10 @@ body:not(.edit) .slider-indicators {
 
 .bck-box.bck-box-3 .bck-content {
     padding: 5px 10px;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
+    border-top: 1px solid #62ACB6;
+    border-bottom: 1px solid #62ACB6;
     width: 80%;
-    margin-left: 40px;
+    margin: auto;
 }
 
 .bck-box.bck-box-3 .bck-title {
@@ -1036,9 +1048,8 @@ body:not(.edit) .slider-indicators {
 
 .bck-box.bck-box-5 .bck-content {
     padding: 10px;
-    background-color: #fff;
-    border: 2px solid;
-    border-color: #bf0811;
+    background-color: #efefeff5;
+    border: none;
 }
 
 
@@ -1510,7 +1521,7 @@ td, th {
 /*Boton toc - boton reininciar ejercicio*/
 
 .btn-primary {
-    background-color: #428bcac9;
+    background-color: #62ACB6;
 }
 
 .btn-primary, .btn-primary.disabled, .btn-primary.disabled:focus {
@@ -1518,7 +1529,9 @@ td, th {
 }
 
 .btn-primary[disabled], .btn-primary[disabled]:focus {
-    background-color: #bd0911;
+    color: #fff;
+    background-color: #85c939;
+    border-color: transparent;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
@@ -1527,8 +1540,19 @@ td, th {
 
 
 #actividad .content .review .attemps span {
-    background-color: #d46065;
+    background-color: #62ACB6;
 }
+
+.btn-danger, .btn-danger[disabled] {
+    background-color: #8FD7DA;
+   }
+
+.btn-solution, .btn-solution.disabled,  .btn-solution[disabled], .btn-next, .btn-next.disabled, .btn-next[disabled] {
+    background-color: #62ACB6;
+}
+
+
+
 
 /*portada*/
 
@@ -1693,7 +1717,7 @@ td, th {
 /*Dropdown 1*/
 
 .bck-dropdown.bck-dropdown-1 {
-    background-color: #bf0811;
+    background-color: #62ACB6;
     border: 1px solid #DDDDDD;
     margin-top: 10px;
     -webkit-border-radius: 5px;
@@ -1707,7 +1731,7 @@ td, th {
 }
 
 .bck-dropdown-1 .bck-dropdown-icon {
-    background-color: #bf0811;
+    background-color: #62ACB6;
     width: 25px;
     height: 10px;
 }
@@ -1865,6 +1889,28 @@ td, th {
     padding: 20px 0;
 }
 
+
+/*flipbox*/
+
+body:not(.edit) .front .bck-flipbox-title, body:not(.edit) .front .bck-flipbox-section {
+    color: #444;
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+body:not(.edit) .bck-flipbox-face.front, body:not(.edit) .bck-flipbox-face.back {
+    border-color: #62ACB6;
+    background: #62acb63d;
+}
+
+body:not(.edit) .back .bck-flipbox-title, body:not(.edit) .back .bck-flipbox-section {
+    color: #404040;
+    font-size: 16px;
+}
+
+
+
 /****/
 
 @media screen and (max-width: 768px) {
@@ -1898,4 +1944,5 @@ td, th {
         border-right-width: 20px;
         bottom:0 ;
     }
+
 }
