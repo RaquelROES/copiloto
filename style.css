@@ -78,7 +78,7 @@ body:not(.isTablet) #book-index #indice .units ul li:not(.disabled) a:hover, #bo
 
 
 #book-index .col-main {
-        background: #62ACB6;
+    background: #62ACB6 !important;
 }
 
 #book-index .col-indice {
@@ -195,11 +195,7 @@ body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover a
     color: #fff;
 }
 
-body:not(.isTablet) #book-index #indice .unit-content .actividades .item:active,
-#book-index #indice .unit-content .actividades .item.active,
-#book-index #indice .unit-content .actividades .item.current {
-    background: #980d0d;
-}
+
 
 #indice .unit-content .actividades .item.nivel_6 .title,
 #indice .unit-content .actividades .item.nivel_6 .text {
@@ -1940,5 +1936,4 @@ body:not(.edit) .back .bck-flipbox-title, body:not(.edit) .back .bck-flipbox-sec
         border-right-width: 20px;
         bottom:0 ;
     }
-
 }
