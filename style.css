@@ -70,10 +70,6 @@ body {
     background-color: transparent;
 }
 
-#actividad a:not(.zoom_flag_img) {
-    background-color: #fff;
-}
-
 
 /*INDICE LATERAL*/
 body:not(.isTablet) #book-index #indice .units ul li:not(.disabled) a:hover, #book-index #indice .units ul li.active a {
@@ -1944,5 +1940,4 @@ body:not(.edit) .back .bck-flipbox-title, body:not(.edit) .back .bck-flipbox-sec
         border-right-width: 20px;
         bottom:0 ;
     }
-
 }
